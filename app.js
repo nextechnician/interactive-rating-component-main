@@ -18,6 +18,7 @@ ratingsButtons.forEach((rating) => {
 
 submitButton.addEventListener('click', () => {
    if (selectedRating === null) {
+      alert('Please select a rating');
    } else {
       feedbackText.textContent = selectedRating;
       ratingContainer.hidden = true;
